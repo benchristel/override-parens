@@ -11,7 +11,7 @@ Ruby doesn't actually let you override the method call operator - what's really 
 This gem lets you hide that piece of trickery and pretend that it's possible to override parentheses in Ruby.
 
 ```ruby
-require 'override-parens'
+require 'override_parens'
 
 class MyClass
   include OverrideParens
@@ -25,7 +25,7 @@ class MyClass
   end
 end
 
-MyClass(1)
+MyClass(1) # => #<MyClass:0xXXXX @foo=1>
 ```
 
 ## Installation
